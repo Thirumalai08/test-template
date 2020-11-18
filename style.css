@@ -1,10 +1,12 @@
 /* color: #228B22 
 color: #242C44
+color: #015b75
 */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 body {
   font-family: 'Poppins',sans-serif;
@@ -316,3 +318,65 @@ a {
   }
   .features .card h3 { font-size: 16px; }
 }
+
+/** Test Banner **/
+.test {
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background: url('./images/bg.jpg'),url('./images/mask.jpg');
+  background-blend-mode: screen;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+ .play img {
+  cursor: pointer;
+}
+.trailer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 10000;
+  background: rgba(255,255,255,0.95);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.2s;
+}
+.trailer.active {
+  opacity: 1;
+  visibility: visible;
+}
+.trailer video { width: 700px; outline: none; }
+.trailer .close {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+  max-width: 50px;
+}
+/***/
+@media screen and (max-width:768px) {
+  .test {
+    background-size: 200%;
+  }
+  .trailer video {
+    max-width: 90%;
+    outline: none;
+  }
+  .trailer .close {
+    position: absolute;
+    right: 20px;
+    max-width: 30px;
+  }
+}
+
