@@ -327,7 +327,7 @@ a {
   align-items: center;
   justify-content: center;
   min-height: 80vh;
-  background: url('./images/bg.jpg'),url('./images/mask.jpg');
+  background: url('./images/img-1.jpg'),url('./images/mask.jpg');
   background-blend-mode: screen;
   background-position: center;
   background-size: cover;
