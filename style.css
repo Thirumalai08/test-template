@@ -200,10 +200,12 @@ a {
   font-size: 18px;
 }
 @media screen and (max-width:768px){ 
+  .banner .content { max-width: 550px; }
   .banner .content h2 { font-size: 40px; }
   .banner .content p { font-size: 16px; }
 }
-@media screen and (max-width:480px){ 
+@media screen and (max-width:480px){
+  .banner .content { max-width: 380px; } 
   .banner .content h2 { font-size: 32px; }
   .banner .content p { font-size: 14px; }
 }
