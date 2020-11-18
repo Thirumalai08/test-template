@@ -166,3 +166,44 @@ a {
   }
   .social__navbar__menu { display: none; }
 }
+
+/* Banner */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  background: #242C44;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*.banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.25;
+}*/
+.banner .content {
+  position: relative;
+  max-width: 750px;
+  text-align: center;
+}
+.banner .content h2 {
+  color: #fff;
+  font-size: 52px;
+}
+.banner .content p {
+  color: #fff;
+  font-size: 18px;
+}
+@media screen and (max-width:768px){ 
+  .banner .content h2 { font-size: 40px; }
+  .banner .content p { font-size: 16px; }
+}
+@media screen and (max-width:480px){ 
+  .banner .content h2 { font-size: 32px; }
+  .banner .content p { font-size: 14px; }
+}
